@@ -1,6 +1,6 @@
 package pkg
 
 type Component interface {
-	Search(component Component)
+	Search(name string)
 	GetName() string
 }
