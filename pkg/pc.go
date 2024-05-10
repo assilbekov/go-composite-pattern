@@ -11,6 +11,7 @@ type PC struct {
 func (pc *PC) Search(name string) {
 	if pc.Name == name {
 		fmt.Println("PC found" + pc.Description + "\n")
+		return
 	}
 
 	for _, c := range pc.Components {
