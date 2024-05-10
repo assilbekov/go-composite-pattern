@@ -19,6 +19,13 @@ var (
 			&gpu,
 		},
 	}
+	pc = pkg.PC{
+		Name:        "AMD",
+		Description: "AMD PC",
+		Components: []pkg.Component{
+			&motherBoard,
+		},
+	}
 )
 
 func main() {
@@ -27,4 +34,9 @@ func main() {
 	motherBoard.Search("Asus")
 	motherBoard.Search("AMD")
 	motherBoard.Search("AMD")
+	pc.Search("Intel")
+	pc.Search("NVIDIA")
+	pc.Search("Asus")
+	pc.Search("AMD")
+	pc.Search("AMD")
 }
